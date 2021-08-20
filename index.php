@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $userId = $_POST['user_id'];
 
-    $url = "https://shop.garena.my/api/auth/player_id_login";
+    $url = "https://recargajogo.com.br/api/auth/player_id_login";
 
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_URL, $url);
@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     curl_close($curl);
   }
   $jsonDecode = json_decode($resp, true);
+  var_dump($jsonDecode);
 }
 
 ?>
