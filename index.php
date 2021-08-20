@@ -77,8 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
               if (isset($jsonDecode) && array_key_exists('nickname',$jsonDecode)) {
 
-                echo '<td align="center">' . $jsonDecode['region'] . '</td>';
-                echo '<td align="center">' . $jsonDecode['nickname'] . '</td>';
+                echo '<td align="center">' . $jsonDecode['event_region'] . '</td>';
+                echo '<td align="center">' . $jsonDecode['role'] . '</td>';
                 echo '<td align="center">' . $jsonDecode['open_id'] . '</td>';
               }
             
